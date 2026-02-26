@@ -1,0 +1,24 @@
+name: sve_catalogue_flutter
+description: Shadowverse Evolve catalogue Android shell using Flutter + WebView.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/www/
+    - assets/www/assets/
+    - assets/www/data/

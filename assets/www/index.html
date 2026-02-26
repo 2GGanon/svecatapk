@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a6b57" />
+    <title>Shadowverse: Evolve Catalog</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>Shadowverse: Evolve Catalog</h1>
+        <p>Track owned copies (0-3) across your collection.</p>
+      </div>
+      <img class="header-art" src="./assets/hero-collection.svg" alt="Card collection illustration" />
+    </header>
+
+    <main class="layout">
+      <section class="controls">
+        <div class="filters">
+          <label class="control">
+            <span>Search</span>
+            <input id="searchInput" type="text" placeholder="Card name or code" />
+          </label>
+
+          <label class="control">
+            <span>Set</span>
+            <select id="setFilter">
+              <option value="">All sets</option>
+            </select>
+          </label>
+
+          <label class="control">
+            <span>Rarity</span>
+            <select id="rarityFilter">
+              <option value="">All rarities</option>
+            </select>
+          </label>
+
+          <label class="control checkbox">
+            <input id="ownedOnly" type="checkbox" />
+            <span>Owned only</span>
+          </label>
+        </div>
+        <div class="actions">
+          <button id="exportBtn" type="button">Export Collection</button>
+          <label class="import-label">
+            Import Collection
+            <input id="importInput" type="file" accept=".json" />
+          </label>
+        </div>
+      </section>
+
+      <section class="summary">
+        <label class="summary-toggle">
+          <input id="summaryHigherOnly" type="checkbox" />
+          <span>Summary Mode: Higher than Base rarity only</span>
+        </label>
+        <div class="summary-card">
+          <strong id="incompletePlaysets">0</strong>
+          <span>Incomplete Playsets</span>
+        </div>
+        <div class="summary-card">
+          <strong id="incompleteSets">0</strong>
+          <span>Incomplete Sets</span>
+        </div>
+      </section>
+
+      <section class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Art</th>
+              <th class="meta-col">Card Name</th>
+              <th class="meta-col">Card Code</th>
+              <th class="meta-col">Set</th>
+              <th class="meta-col">Owned (0-3)</th>
+              <th class="meta-col">Promo Source</th>
+            </tr>
+          </thead>
+          <tbody id="cardsTableBody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <template id="rowTemplate">
+      <tr>
+        <td class="card-art-cell">
+          <img class="card-art" alt="Card art" loading="lazy" />
+          <div class="owned-overlay">
+            <button class="qty-btn dec" type="button">-</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn inc" type="button">+</button>
+          </div>
+        </td>
+        <td class="card-name meta-col"></td>
+        <td class="card-code meta-col"></td>
+        <td class="card-set meta-col"></td>
+        <td class="owned-cell meta-col"></td>
+        <td class="promo-source meta-col"></td>
+      </tr>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
