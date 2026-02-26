@@ -1,9 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Set library icon">
-  <rect x="10" y="20" width="14" height="46" rx="3" fill="#0f8c72"/>
-  <rect x="26" y="16" width="14" height="50" rx="3" fill="#28a186"/>
-  <rect x="42" y="22" width="14" height="44" rx="3" fill="#55baa2"/>
-  <rect x="58" y="12" width="12" height="54" rx="3" fill="#86d8c4"/>
-  <rect x="8" y="66" width="64" height="4" rx="2" fill="#0f5f50"/>
-  <circle cx="34" cy="36" r="5" fill="#e4fff6"/>
-  <rect x="46" y="34" width="6" height="6" rx="1" fill="#e4fff6"/>
-</svg>

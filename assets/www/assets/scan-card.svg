@@ -1,9 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scan card icon">
-  <rect x="8" y="12" width="44" height="56" rx="7" fill="#f0fff9" stroke="#0f8c72" stroke-width="3"/>
-  <rect x="16" y="22" width="28" height="4" rx="2" fill="#0f8c72"/>
-  <rect x="16" y="30" width="20" height="4" rx="2" fill="#69c6b2"/>
-  <rect x="16" y="38" width="24" height="4" rx="2" fill="#69c6b2"/>
-  <circle cx="60" cy="52" r="13" fill="#0f8c72"/>
-  <circle cx="60" cy="52" r="7" fill="#c9f7ea"/>
-  <line x1="69" y1="61" x2="76" y2="68" stroke="#0f8c72" stroke-width="4" stroke-linecap="round"/>
-</svg>
