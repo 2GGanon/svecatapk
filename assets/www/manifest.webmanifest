@@ -1,0 +1,9 @@
+{
+  "name": "Shadowverse: Evolve Catalog",
+  "short_name": "SVE Catalog",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f7f5",
+  "theme_color": "#1a6b57",
+  "icons": []
+}
