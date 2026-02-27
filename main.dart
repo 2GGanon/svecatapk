@@ -53,10 +53,7 @@ class _CatalogueWebViewPageState extends State<CatalogueWebViewPage> {
         child: Stack(
           children: [
             WebViewWidget(controller: _controller),
-            if (_isLoading)
-              const Center(
-                child: CircularProgressIndicator(),
-              ),
+            if (_isLoading) const Center(child: CircularProgressIndicator()),
           ],
         ),
       ),
