@@ -14,7 +14,10 @@ class SveCatalogueApp extends StatelessWidget {
     return MaterialApp(
       title: 'SVE Catalogue',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorSchemeSeed: Colors.teal, useMaterial3: true),
+      theme: ThemeData(
+        colorSchemeSeed: Colors.teal,
+        useMaterial3: true,
+      ),
       home: const CatalogueWebViewPage(),
     );
   }
@@ -39,7 +42,9 @@ class _CatalogueWebViewPageState extends State<CatalogueWebViewPage> {
       ..setNavigationDelegate(
         NavigationDelegate(
           onPageFinished: (_) {
-            if (mounted) setState(() => _isLoading = false);
+            if (mounted) {
+              setState(() => _isLoading = false);
+            }
           },
         ),
       )
@@ -53,7 +58,10 @@ class _CatalogueWebViewPageState extends State<CatalogueWebViewPage> {
         child: Stack(
           children: [
             WebViewWidget(controller: _controller),
-            if (_isLoading) const Center(child: CircularProgressIndicator()),
+            if (_isLoading)
+              const Center(
+                child: CircularProgressIndicator(),
+              ),
           ],
         ),
       ),
